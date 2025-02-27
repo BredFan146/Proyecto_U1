@@ -59,5 +59,68 @@ namespace Proyecto_U1.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] imagen1 {
+            get {
+                object obj = ResourceManager.GetObject("imagen1", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] imagen2 {
+            get {
+                object obj = ResourceManager.GetObject("imagen2", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] imagen3 {
+            get {
+                object obj = ResourceManager.GetObject("imagen3", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_password_manager_computer_icons_password_strength_password_safe_chang_miscellaneous_password_strength {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-password-manager-computer-icons-password-strength-password-safe-chang" +
+                        "-miscellaneous-password-strength", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_computer_icons_icon_design_user_register_button_heroes_rectangle_logo {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-computer-icons-icon-design-user-register-button-heroes-rectangle-" +
+                        "logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_computer_icons_login_user_gestures_miscellaneous_monochrome_account {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-computer-icons-login-user-gestures-miscellaneous-monochrome-accou" +
+                        "nt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

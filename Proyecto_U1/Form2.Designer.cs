@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             lblCorreo = new Label();
             lblContraseña = new Label();
@@ -40,6 +41,7 @@
             lblRegistrar = new Label();
             lblRecuperarContraseña = new Label();
             picUsuario = new PictureBox();
+            imageList1 = new ImageList(components);
             ((System.ComponentModel.ISupportInitialize)picUsuario).BeginInit();
             SuspendLayout();
             // 
@@ -157,7 +159,7 @@
             // picUsuario
             // 
             picUsuario.BackgroundImageLayout = ImageLayout.Center;
-            picUsuario.Image = (Image)resources.GetObject("picUsuario.Image");
+            picUsuario.Image = Properties.Resources.png_transparent_computer_icons_login_user_gestures_miscellaneous_monochrome_account;
             picUsuario.InitialImage = (Image)resources.GetObject("picUsuario.InitialImage");
             picUsuario.Location = new Point(197, 18);
             picUsuario.Name = "picUsuario";
@@ -165,6 +167,15 @@
             picUsuario.SizeMode = PictureBoxSizeMode.Zoom;
             picUsuario.TabIndex = 10;
             picUsuario.TabStop = false;
+            // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = Color.Transparent;
+            imageList1.Images.SetKeyName(0, "png-clipart-password-manager-computer-icons-password-strength-password-safe-chang-miscellaneous-password-strength.png");
+            imageList1.Images.SetKeyName(1, "png-transparent-computer-icons-icon-design-user-register-button-heroes-rectangle-logo.png");
+            imageList1.Images.SetKeyName(2, "png-transparent-computer-icons-login-user-gestures-miscellaneous-monochrome-account.png");
             // 
             // Form2
             // 
@@ -207,5 +218,6 @@
         private Label lblRegistrar;
         private Label lblRecuperarContraseña;
         private PictureBox picUsuario;
+        private ImageList imageList1;
     }
 }

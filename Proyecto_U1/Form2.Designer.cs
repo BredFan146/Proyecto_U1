@@ -50,9 +50,9 @@
             lblCorreo.AutoSize = true;
             lblCorreo.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             lblCorreo.ForeColor = Color.DarkSlateGray;
-            lblCorreo.Location = new Point(80, 149);
+            lblCorreo.Location = new Point(70, 113);
             lblCorreo.Name = "lblCorreo";
-            lblCorreo.Size = new Size(174, 25);
+            lblCorreo.Size = new Size(141, 20);
             lblCorreo.TabIndex = 0;
             lblCorreo.Text = "Correo electronico:";
             // 
@@ -61,9 +61,9 @@
             lblContraseña.AutoSize = true;
             lblContraseña.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             lblContraseña.ForeColor = Color.DarkSlateGray;
-            lblContraseña.Location = new Point(80, 215);
+            lblContraseña.Location = new Point(70, 161);
             lblContraseña.Name = "lblContraseña";
-            lblContraseña.Size = new Size(113, 25);
+            lblContraseña.Size = new Size(92, 20);
             lblContraseña.TabIndex = 1;
             lblContraseña.Text = "Contraseña:";
             // 
@@ -71,19 +71,21 @@
             // 
             txtCorreo.BorderStyle = BorderStyle.FixedSingle;
             txtCorreo.Font = new Font("Segoe UI", 10.8F);
-            txtCorreo.Location = new Point(289, 142);
+            txtCorreo.Location = new Point(253, 106);
+            txtCorreo.Margin = new Padding(3, 2, 3, 2);
             txtCorreo.Name = "txtCorreo";
-            txtCorreo.Size = new Size(125, 31);
+            txtCorreo.Size = new Size(110, 27);
             txtCorreo.TabIndex = 2;
             // 
             // txtContraseña
             // 
             txtContraseña.BorderStyle = BorderStyle.FixedSingle;
             txtContraseña.Font = new Font("Segoe UI", 10.8F);
-            txtContraseña.Location = new Point(289, 215);
+            txtContraseña.Location = new Point(253, 161);
+            txtContraseña.Margin = new Padding(3, 2, 3, 2);
             txtContraseña.Name = "txtContraseña";
             txtContraseña.PasswordChar = '•';
-            txtContraseña.Size = new Size(125, 31);
+            txtContraseña.Size = new Size(110, 27);
             txtContraseña.TabIndex = 3;
             // 
             // lblTitulo
@@ -91,9 +93,9 @@
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTitulo.ForeColor = Color.MidnightBlue;
-            lblTitulo.Location = new Point(162, 83);
+            lblTitulo.Location = new Point(142, 62);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(205, 41);
+            lblTitulo.Size = new Size(167, 32);
             lblTitulo.TabIndex = 4;
             lblTitulo.Text = "Iniciar Sesion";
             lblTitulo.Click += label3_Click;
@@ -101,20 +103,22 @@
             // lblError
             // 
             lblError.AutoSize = true;
-            lblError.Location = new Point(129, 267);
+            lblError.Font = new Font("Arial Rounded MT Bold", 8.25F);
+            lblError.Location = new Point(113, 200);
             lblError.Name = "lblError";
-            lblError.Size = new Size(0, 20);
+            lblError.Size = new Size(0, 12);
             lblError.TabIndex = 5;
             // 
             // btnAceptar
             // 
             btnAceptar.BackColor = Color.RoyalBlue;
             btnAceptar.FlatStyle = FlatStyle.Flat;
-            btnAceptar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnAceptar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             btnAceptar.ForeColor = Color.White;
-            btnAceptar.Location = new Point(129, 309);
+            btnAceptar.Location = new Point(113, 217);
+            btnAceptar.Margin = new Padding(3, 2, 3, 2);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(94, 29);
+            btnAceptar.Size = new Size(80, 29);
             btnAceptar.TabIndex = 6;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = false;
@@ -122,13 +126,14 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.BackColor = Color.RoyalBlue;
+            btnCancelar.BackColor = Color.Crimson;
             btnCancelar.FlatStyle = FlatStyle.Flat;
-            btnCancelar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnCancelar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             btnCancelar.ForeColor = Color.White;
-            btnCancelar.Location = new Point(289, 309);
+            btnCancelar.Location = new Point(253, 217);
+            btnCancelar.Margin = new Padding(3, 2, 3, 2);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(94, 29);
+            btnCancelar.Size = new Size(80, 29);
             btnCancelar.TabIndex = 7;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -137,9 +142,9 @@
             // lblRegistrar
             // 
             lblRegistrar.AutoSize = true;
-            lblRegistrar.Location = new Point(129, 373);
+            lblRegistrar.Location = new Point(113, 280);
             lblRegistrar.Name = "lblRegistrar";
-            lblRegistrar.Size = new Size(238, 20);
+            lblRegistrar.Size = new Size(187, 15);
             lblRegistrar.TabIndex = 8;
             lblRegistrar.Text = "¿No tienes cuenta? Regístrate aqui";
             lblRegistrar.Click += label3_Click_1;
@@ -149,9 +154,9 @@
             lblRecuperarContraseña.AutoSize = true;
             lblRecuperarContraseña.Cursor = Cursors.Hand;
             lblRecuperarContraseña.ForeColor = Color.Blue;
-            lblRecuperarContraseña.Location = new Point(129, 407);
+            lblRecuperarContraseña.Location = new Point(113, 305);
             lblRecuperarContraseña.Name = "lblRecuperarContraseña";
-            lblRecuperarContraseña.Size = new Size(178, 20);
+            lblRecuperarContraseña.Size = new Size(141, 15);
             lblRecuperarContraseña.TabIndex = 9;
             lblRecuperarContraseña.Text = "¿Olvidaste tu contraseña?";
             lblRecuperarContraseña.Click += label1_Click;
@@ -161,9 +166,10 @@
             picUsuario.BackgroundImageLayout = ImageLayout.Center;
             picUsuario.Image = Properties.Resources.png_transparent_computer_icons_login_user_gestures_miscellaneous_monochrome_account;
             picUsuario.InitialImage = (Image)resources.GetObject("picUsuario.InitialImage");
-            picUsuario.Location = new Point(197, 18);
+            picUsuario.Location = new Point(172, 14);
+            picUsuario.Margin = new Padding(3, 2, 3, 2);
             picUsuario.Name = "picUsuario";
-            picUsuario.Size = new Size(125, 62);
+            picUsuario.Size = new Size(109, 46);
             picUsuario.SizeMode = PictureBoxSizeMode.Zoom;
             picUsuario.TabIndex = 10;
             picUsuario.TabStop = false;
@@ -179,9 +185,9 @@
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(514, 450);
+            ClientSize = new Size(450, 338);
             Controls.Add(picUsuario);
             Controls.Add(lblRecuperarContraseña);
             Controls.Add(lblRegistrar);
@@ -194,6 +200,7 @@
             Controls.Add(lblContraseña);
             Controls.Add(lblCorreo);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form2";

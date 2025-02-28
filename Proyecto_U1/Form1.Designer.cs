@@ -42,9 +42,9 @@
             // 
             btnIniciarSesion.BackColor = Color.RoyalBlue;
             btnIniciarSesion.FlatStyle = FlatStyle.Flat;
-            btnIniciarSesion.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            btnIniciarSesion.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             btnIniciarSesion.ForeColor = SystemColors.Window;
-            btnIniciarSesion.Location = new Point(292, 76);
+            btnIniciarSesion.Location = new Point(136, 422);
             btnIniciarSesion.Name = "btnIniciarSesion";
             btnIniciarSesion.Size = new Size(172, 44);
             btnIniciarSesion.TabIndex = 0;
@@ -54,11 +54,11 @@
             // 
             // btnCerrarSesion
             // 
-            btnCerrarSesion.BackColor = Color.RoyalBlue;
+            btnCerrarSesion.BackColor = Color.Crimson;
             btnCerrarSesion.FlatStyle = FlatStyle.Flat;
-            btnCerrarSesion.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            btnCerrarSesion.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             btnCerrarSesion.ForeColor = SystemColors.Window;
-            btnCerrarSesion.Location = new Point(292, 573);
+            btnCerrarSesion.Location = new Point(383, 422);
             btnCerrarSesion.Name = "btnCerrarSesion";
             btnCerrarSesion.Size = new Size(172, 44);
             btnCerrarSesion.TabIndex = 1;
@@ -71,9 +71,9 @@
             lblBienvenida.AutoSize = true;
             lblBienvenida.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblBienvenida.ForeColor = Color.DarkBlue;
-            lblBienvenida.Location = new Point(235, 184);
+            lblBienvenida.Location = new Point(68, 56);
             lblBienvenida.Name = "lblBienvenida";
-            lblBienvenida.Size = new Size(176, 41);
+            lblBienvenida.Size = new Size(142, 32);
             lblBienvenida.TabIndex = 2;
             lblBienvenida.Text = "Bienvenido";
             lblBienvenida.TextAlign = ContentAlignment.MiddleCenter;
@@ -84,9 +84,9 @@
             lblCorreo.AutoSize = true;
             lblCorreo.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblCorreo.ForeColor = Color.DarkSlateGray;
-            lblCorreo.Location = new Point(235, 244);
+            lblCorreo.Location = new Point(68, 116);
             lblCorreo.Name = "lblCorreo";
-            lblCorreo.Size = new Size(75, 28);
+            lblCorreo.Size = new Size(61, 21);
             lblCorreo.TabIndex = 3;
             lblCorreo.Text = "Correo";
             lblCorreo.TextAlign = ContentAlignment.MiddleCenter;
@@ -96,9 +96,9 @@
             lblDireccion.AutoSize = true;
             lblDireccion.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblDireccion.ForeColor = Color.DarkSlateGray;
-            lblDireccion.Location = new Point(235, 314);
+            lblDireccion.Location = new Point(68, 186);
             lblDireccion.Name = "lblDireccion";
-            lblDireccion.Size = new Size(102, 28);
+            lblDireccion.Size = new Size(83, 21);
             lblDireccion.TabIndex = 4;
             lblDireccion.Text = "Direccion";
             lblDireccion.TextAlign = ContentAlignment.MiddleCenter;
@@ -108,9 +108,9 @@
             lblFechaNacimiento.AutoSize = true;
             lblFechaNacimiento.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblFechaNacimiento.ForeColor = Color.DarkSlateGray;
-            lblFechaNacimiento.Location = new Point(235, 379);
+            lblFechaNacimiento.Location = new Point(68, 251);
             lblFechaNacimiento.Name = "lblFechaNacimiento";
-            lblFechaNacimiento.Size = new Size(211, 28);
+            lblFechaNacimiento.Size = new Size(171, 21);
             lblFechaNacimiento.TabIndex = 5;
             lblFechaNacimiento.Text = "Fecha de Nacimiento";
             lblFechaNacimiento.TextAlign = ContentAlignment.MiddleCenter;
@@ -120,9 +120,9 @@
             lblTipoUsuario.AutoSize = true;
             lblTipoUsuario.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblTipoUsuario.ForeColor = Color.DarkSlateGray;
-            lblTipoUsuario.Location = new Point(235, 450);
+            lblTipoUsuario.Location = new Point(68, 322);
             lblTipoUsuario.Name = "lblTipoUsuario";
-            lblTipoUsuario.Size = new Size(161, 28);
+            lblTipoUsuario.Size = new Size(130, 21);
             lblTipoUsuario.TabIndex = 6;
             lblTipoUsuario.Text = "Tipo de Usuario";
             lblTipoUsuario.TextAlign = ContentAlignment.MiddleCenter;
@@ -132,17 +132,18 @@
             cmbColorTexto.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbColorTexto.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbColorTexto.FormattingEnabled = true;
-            cmbColorTexto.Location = new Point(554, 83);
+            cmbColorTexto.Location = new Point(249, 509);
             cmbColorTexto.Name = "cmbColorTexto";
-            cmbColorTexto.Size = new Size(169, 33);
+            cmbColorTexto.Size = new Size(169, 27);
             cmbColorTexto.TabIndex = 7;
+            cmbColorTexto.SelectedIndexChanged += cmbColorTexto_SelectedIndexChanged_1;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(9F, 23F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(749, 726);
+            ClientSize = new Size(652, 625);
             Controls.Add(cmbColorTexto);
             Controls.Add(lblTipoUsuario);
             Controls.Add(lblFechaNacimiento);

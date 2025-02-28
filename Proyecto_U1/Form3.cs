@@ -43,7 +43,7 @@ namespace Proyecto_U1
             string contraseña = txtContraseña.Text;
             string confirmarContraseña = txtConfirmarContraseña.Text;
 
-            // 🔴 Validaciones de los datos ingresados
+            //Validaciones de los datos ingresados
             if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(correo) ||
                 string.IsNullOrWhiteSpace(direccion) || string.IsNullOrWhiteSpace(contraseña) ||
                 string.IsNullOrWhiteSpace(confirmarContraseña))
@@ -52,14 +52,14 @@ namespace Proyecto_U1
                 return;
             }
 
-            // 📧 Validación de correo (Debe contener "@" y ".")
+            //Validación de correo (Debe contener "@" y ".")
             if (!correo.Contains("@") || !correo.Contains("."))
             {
                 lblError.Text = "Ingrese un correo electrónico válido.";
                 return;
             }
 
-            // 🔞 Validación de edad (Debe ser mayor de 18 años)
+            //Validación de edad (Debe ser mayor de 18 años)
             int edad = DateTime.Now.Year - fechaNacimiento.Year;
             if (edad < 18)
             {
@@ -67,28 +67,28 @@ namespace Proyecto_U1
                 return;
             }
 
-            // 🔐 Validación de contraseña (mínimo 6 caracteres)
+            //Validación de contraseña (mínimo 6 caracteres)
             if (contraseña.Length < 6)
             {
                 lblError.Text = "La contraseña debe tener al menos 6 caracteres.";
                 return;
             }
 
-            // 🔄 Confirmación de contraseña
+            //Confirmación de contraseña
             if (contraseña != confirmarContraseña)
             {
                 lblError.Text = "Las contraseñas no coinciden.";
                 return;
             }
 
-            // ⚠️ Verificar si el correo ya está registrado
+            //Verificar si el correo ya está registrado
             if (usuarios.Any(u => u.Correo == correo))
             {
                 lblError.Text = "Este correo ya está registrado.";
                 return;
             }
 
-            // ✅ Crear y guardar el nuevo usuario
+            //Crear y guardar el nuevo usuario
             Usuario nuevoUsuario = new Usuario
             {
                 Nombre = nombre,

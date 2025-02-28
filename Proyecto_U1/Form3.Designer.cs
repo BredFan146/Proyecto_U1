@@ -56,9 +56,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.DarkBlue;
-            label1.Location = new Point(190, 108);
+            label1.Location = new Point(166, 81);
             label1.Name = "label1";
-            label1.Size = new Size(295, 41);
+            label1.Size = new Size(239, 32);
             label1.TabIndex = 0;
             label1.Text = "Registro de Usuario";
             // 
@@ -67,9 +67,9 @@
             lblNombre.AutoSize = true;
             lblNombre.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             lblNombre.ForeColor = Color.DarkSlateGray;
-            lblNombre.Location = new Point(38, 193);
+            lblNombre.Location = new Point(33, 145);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(86, 25);
+            lblNombre.Size = new Size(71, 20);
             lblNombre.TabIndex = 1;
             lblNombre.Text = "Nombre:";
             lblNombre.TextAlign = ContentAlignment.MiddleCenter;
@@ -79,9 +79,9 @@
             lblCorreo.AutoSize = true;
             lblCorreo.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             lblCorreo.ForeColor = Color.DarkSlateGray;
-            lblCorreo.Location = new Point(38, 252);
+            lblCorreo.Location = new Point(33, 189);
             lblCorreo.Name = "lblCorreo";
-            lblCorreo.Size = new Size(74, 25);
+            lblCorreo.Size = new Size(60, 20);
             lblCorreo.TabIndex = 2;
             lblCorreo.Text = "Correo:";
             lblCorreo.TextAlign = ContentAlignment.MiddleCenter;
@@ -91,9 +91,9 @@
             lblDireccion.AutoSize = true;
             lblDireccion.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             lblDireccion.ForeColor = Color.DarkSlateGray;
-            lblDireccion.Location = new Point(38, 431);
+            lblDireccion.Location = new Point(33, 323);
             lblDireccion.Name = "lblDireccion";
-            lblDireccion.Size = new Size(97, 25);
+            lblDireccion.Size = new Size(78, 20);
             lblDireccion.TabIndex = 3;
             lblDireccion.Text = "Direccion:";
             lblDireccion.TextAlign = ContentAlignment.MiddleCenter;
@@ -103,9 +103,9 @@
             lblFechaNacimiento.AutoSize = true;
             lblFechaNacimiento.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             lblFechaNacimiento.ForeColor = Color.DarkSlateGray;
-            lblFechaNacimiento.Location = new Point(38, 497);
+            lblFechaNacimiento.Location = new Point(33, 373);
             lblFechaNacimiento.Name = "lblFechaNacimiento";
-            lblFechaNacimiento.Size = new Size(195, 25);
+            lblFechaNacimiento.Size = new Size(159, 20);
             lblFechaNacimiento.TabIndex = 4;
             lblFechaNacimiento.Text = "Fecha de Nacimiento:";
             lblFechaNacimiento.TextAlign = ContentAlignment.MiddleCenter;
@@ -115,9 +115,9 @@
             lblTipoUsuario.AutoSize = true;
             lblTipoUsuario.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             lblTipoUsuario.ForeColor = Color.DarkSlateGray;
-            lblTipoUsuario.Location = new Point(38, 562);
+            lblTipoUsuario.Location = new Point(33, 422);
             lblTipoUsuario.Name = "lblTipoUsuario";
-            lblTipoUsuario.Size = new Size(151, 25);
+            lblTipoUsuario.Size = new Size(123, 20);
             lblTipoUsuario.TabIndex = 5;
             lblTipoUsuario.Text = "Tipo de Usuario:";
             lblTipoUsuario.TextAlign = ContentAlignment.MiddleCenter;
@@ -125,43 +125,47 @@
             // lblError
             // 
             lblError.AutoSize = true;
-            lblError.Location = new Point(138, 621);
+            lblError.Location = new Point(121, 466);
             lblError.Name = "lblError";
-            lblError.Size = new Size(0, 20);
+            lblError.Size = new Size(0, 15);
             lblError.TabIndex = 6;
             // 
             // txtNombre
             // 
             txtNombre.BorderStyle = BorderStyle.FixedSingle;
             txtNombre.Font = new Font("Segoe UI", 10.8F);
-            txtNombre.Location = new Point(282, 190);
+            txtNombre.Location = new Point(247, 142);
+            txtNombre.Margin = new Padding(3, 2, 3, 2);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(125, 31);
+            txtNombre.Size = new Size(110, 27);
             txtNombre.TabIndex = 7;
             // 
             // txtCorreo
             // 
             txtCorreo.BorderStyle = BorderStyle.FixedSingle;
             txtCorreo.Font = new Font("Segoe UI", 10.8F);
-            txtCorreo.Location = new Point(282, 245);
+            txtCorreo.Location = new Point(247, 184);
+            txtCorreo.Margin = new Padding(3, 2, 3, 2);
             txtCorreo.Name = "txtCorreo";
-            txtCorreo.Size = new Size(125, 31);
+            txtCorreo.Size = new Size(110, 27);
             txtCorreo.TabIndex = 8;
             // 
             // txtDireccion
             // 
             txtDireccion.BorderStyle = BorderStyle.FixedSingle;
             txtDireccion.Font = new Font("Segoe UI", 10.8F);
-            txtDireccion.Location = new Point(282, 428);
+            txtDireccion.Location = new Point(247, 321);
+            txtDireccion.Margin = new Padding(3, 2, 3, 2);
             txtDireccion.Name = "txtDireccion";
-            txtDireccion.Size = new Size(125, 31);
+            txtDireccion.Size = new Size(110, 27);
             txtDireccion.TabIndex = 9;
             // 
             // dtpFechaNacimiento
             // 
-            dtpFechaNacimiento.Location = new Point(282, 492);
+            dtpFechaNacimiento.Location = new Point(247, 369);
+            dtpFechaNacimiento.Margin = new Padding(3, 2, 3, 2);
             dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-            dtpFechaNacimiento.Size = new Size(263, 27);
+            dtpFechaNacimiento.Size = new Size(231, 23);
             dtpFechaNacimiento.TabIndex = 10;
             // 
             // cmbTipoUsuario
@@ -170,9 +174,10 @@
             cmbTipoUsuario.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbTipoUsuario.FormattingEnabled = true;
             cmbTipoUsuario.Items.AddRange(new object[] { "Normal", "Administrador" });
-            cmbTipoUsuario.Location = new Point(282, 562);
+            cmbTipoUsuario.Location = new Point(247, 422);
+            cmbTipoUsuario.Margin = new Padding(3, 2, 3, 2);
             cmbTipoUsuario.Name = "cmbTipoUsuario";
-            cmbTipoUsuario.Size = new Size(151, 33);
+            cmbTipoUsuario.Size = new Size(133, 27);
             cmbTipoUsuario.TabIndex = 11;
             cmbTipoUsuario.SelectedIndexChanged += cmbTipoUsuario_SelectedIndexChanged;
             // 
@@ -180,11 +185,12 @@
             // 
             btnRegistrar.BackColor = Color.RoyalBlue;
             btnRegistrar.FlatStyle = FlatStyle.Flat;
-            btnRegistrar.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            btnRegistrar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             btnRegistrar.ForeColor = SystemColors.Window;
-            btnRegistrar.Location = new Point(141, 668);
+            btnRegistrar.Location = new Point(148, 503);
+            btnRegistrar.Margin = new Padding(3, 2, 3, 2);
             btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(113, 34);
+            btnRegistrar.Size = new Size(83, 34);
             btnRegistrar.TabIndex = 12;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = false;
@@ -192,13 +198,14 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.BackColor = Color.RoyalBlue;
+            btnCancelar.BackColor = Color.Crimson;
             btnCancelar.FlatStyle = FlatStyle.Flat;
-            btnCancelar.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            btnCancelar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             btnCancelar.ForeColor = SystemColors.Window;
-            btnCancelar.Location = new Point(339, 668);
+            btnCancelar.Location = new Point(322, 503);
+            btnCancelar.Margin = new Padding(3, 2, 3, 2);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(113, 34);
+            btnCancelar.Size = new Size(83, 34);
             btnCancelar.TabIndex = 13;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -209,9 +216,9 @@
             lblContraseña.AutoSize = true;
             lblContraseña.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             lblContraseña.ForeColor = Color.DarkSlateGray;
-            lblContraseña.Location = new Point(38, 310);
+            lblContraseña.Location = new Point(33, 232);
             lblContraseña.Name = "lblContraseña";
-            lblContraseña.Size = new Size(113, 25);
+            lblContraseña.Size = new Size(92, 20);
             lblContraseña.TabIndex = 14;
             lblContraseña.Text = "Contraseña:";
             lblContraseña.TextAlign = ContentAlignment.MiddleCenter;
@@ -221,9 +228,9 @@
             lblConfirmarContraseña.AutoSize = true;
             lblConfirmarContraseña.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             lblConfirmarContraseña.ForeColor = Color.DarkSlateGray;
-            lblConfirmarContraseña.Location = new Point(38, 375);
+            lblConfirmarContraseña.Location = new Point(33, 281);
             lblConfirmarContraseña.Name = "lblConfirmarContraseña";
-            lblConfirmarContraseña.Size = new Size(203, 25);
+            lblConfirmarContraseña.Size = new Size(167, 20);
             lblConfirmarContraseña.TabIndex = 15;
             lblConfirmarContraseña.Text = "Confirmar Contraseña:";
             lblConfirmarContraseña.TextAlign = ContentAlignment.MiddleCenter;
@@ -232,37 +239,40 @@
             // 
             txtContraseña.BorderStyle = BorderStyle.FixedSingle;
             txtContraseña.Font = new Font("Segoe UI", 10.8F);
-            txtContraseña.Location = new Point(282, 310);
+            txtContraseña.Location = new Point(247, 232);
+            txtContraseña.Margin = new Padding(3, 2, 3, 2);
             txtContraseña.Name = "txtContraseña";
             txtContraseña.PasswordChar = '•';
-            txtContraseña.Size = new Size(125, 31);
+            txtContraseña.Size = new Size(110, 27);
             txtContraseña.TabIndex = 16;
             // 
             // txtConfirmarContraseña
             // 
             txtConfirmarContraseña.BorderStyle = BorderStyle.FixedSingle;
             txtConfirmarContraseña.Font = new Font("Segoe UI", 10.8F);
-            txtConfirmarContraseña.Location = new Point(282, 372);
+            txtConfirmarContraseña.Location = new Point(247, 279);
+            txtConfirmarContraseña.Margin = new Padding(3, 2, 3, 2);
             txtConfirmarContraseña.Name = "txtConfirmarContraseña";
             txtConfirmarContraseña.PasswordChar = '•';
-            txtConfirmarContraseña.Size = new Size(125, 31);
+            txtConfirmarContraseña.Size = new Size(110, 27);
             txtConfirmarContraseña.TabIndex = 17;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(257, 30);
+            pictureBox1.Location = new Point(225, 22);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(150, 75);
+            pictureBox1.Size = new Size(131, 56);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
             // 
             // Form3
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(640, 772);
+            ClientSize = new Size(560, 579);
             Controls.Add(pictureBox1);
             Controls.Add(txtConfirmarContraseña);
             Controls.Add(txtContraseña);
@@ -283,6 +293,7 @@
             Controls.Add(lblNombre);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form3";

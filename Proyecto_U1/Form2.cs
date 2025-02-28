@@ -19,10 +19,10 @@ namespace Proyecto_U1
         {
             InitializeComponent();
 
-            lblError.Text = ""; // Ocultar mensaje de error al inicio
+            lblError.Text = ""; // Se oculta el mensaje de error al inicio
             lblError.ForeColor = Color.Red;
 
-            // Hacer que el label "Registrarse" sea interactivo
+            // Se hace que el label "Registrarse" sea interactivo
             lblRegistrar.ForeColor = Color.Blue;
             lblRegistrar.Cursor = Cursors.Hand;
             lblRegistrar.MouseEnter += (s, e) => lblRegistrar.ForeColor = Color.DarkBlue;
@@ -30,7 +30,7 @@ namespace Proyecto_U1
             lblRegistrar.Click += label3_Click_1;
 
 
-            // 🔹 Hacer que lblRecuperarContraseña sea interactivo
+            // Igual para el label de la contrasena
             lblRecuperarContraseña.ForeColor = Color.Blue;
             lblRecuperarContraseña.Cursor = Cursors.Hand;
             lblRecuperarContraseña.MouseEnter += (s, e) => lblRecuperarContraseña.ForeColor = Color.DarkBlue;
@@ -64,6 +64,7 @@ namespace Proyecto_U1
             string correo = txtCorreo.Text.Trim();
             string contraseña = txtContraseña.Text;
 
+
             // Validaciones básicas
             if (string.IsNullOrWhiteSpace(correo) || string.IsNullOrWhiteSpace(contraseña))
             {
@@ -88,7 +89,7 @@ namespace Proyecto_U1
 
                 if (intentosFallidos >= 3)
                 {
-                    txtContraseña.Enabled = false;
+                    txtContraseña.Enabled = false;//Se bloquea el txt de contraseña por superar los 3 intentos
                     MessageBox.Show("Se ha bloqueado el campo de contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
